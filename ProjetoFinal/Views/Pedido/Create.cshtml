@@ -4,38 +4,37 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h1>Criação de Pedido</h1>
 
-<h4>Pedido</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="DataPedido" class="control-label"></label>
+                <label asp-for="DataPedido" class="control-label">Data do Pedido</label>
                 <input asp-for="DataPedido" class="form-control" />
                 <span asp-validation-for="DataPedido" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="PrazoEntrega" class="control-label"></label>
+                <label asp-for="PrazoEntrega" class="control-label">Prazo de Entrega</label>
                 <input asp-for="PrazoEntrega" class="form-control" />
                 <span asp-validation-for="PrazoEntrega" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="IdCliente" class="control-label"></label>
+                <label asp-for="IdCliente" class="control-label">ID Cliente</label>
                 <input asp-for="IdCliente" class="form-control" />
                 <span asp-validation-for="IdCliente" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Salvar" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Voltar para Pedido</a>
 </div>
 
 @section Scripts {

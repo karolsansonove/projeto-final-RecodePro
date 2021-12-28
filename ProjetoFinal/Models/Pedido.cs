@@ -23,5 +23,7 @@ namespace ProjetoFinal.Models
         [Required]
         public int IdCliente { get; set; }
         public Cliente Cliente { get; set; }
+
+        public List<ItemPedido> ItensPedido { get; set; }
     }
 }

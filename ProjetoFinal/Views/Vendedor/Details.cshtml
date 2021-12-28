@@ -4,14 +4,13 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<h1>Detalhes do Vendedor</h1>
 
 <div>
-    <h4>Vendedor</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.IdVendedor)
+            ID Vendedor
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.IdVendedor)
@@ -23,22 +22,16 @@
             @Html.DisplayFor(model => model.Nome)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Cpf)
+            CPF
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Cpf)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Email)
+        <dt class="col-sm-2">
+            E-mail
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Email)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Senha)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Senha)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Telefone)
@@ -47,13 +40,13 @@
             @Html.DisplayFor(model => model.Telefone)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Endereco)
+            Endereço
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Endereco)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Cep)
+            CEP
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Cep)
@@ -65,7 +58,7 @@
             @Html.DisplayFor(model => model.Cidade)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Uf)
+            UF
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Uf)
@@ -73,6 +66,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.IdPessoa">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model.IdPessoa">Editar</a> |
+    <a asp-action="Index">Voltar para Vendedores</a>
 </div>

@@ -4,9 +4,8 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h1>Criar novo item no pedido</h1>
 
-<h4>ItemPedido</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -18,24 +17,24 @@
                 <span asp-validation-for="Quantidade" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="IdProduto" class="control-label"></label>
+                <label asp-for="IdProduto" class="control-label">ID Produto</label>
                 <input asp-for="IdProduto" class="form-control" />
                 <span asp-validation-for="IdProduto" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="IdPedido" class="control-label"></label>
+                <label asp-for="IdPedido" class="control-label">ID Pedido</label>
                 <input asp-for="IdPedido" class="form-control" />
                 <span asp-validation-for="IdPedido" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Salvar" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Voltar para Itens de Pedidos</a>
 </div>
 
 @section Scripts {
