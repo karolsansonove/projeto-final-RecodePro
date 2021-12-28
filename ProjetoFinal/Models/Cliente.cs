@@ -10,8 +10,6 @@ namespace ProjetoFinal.Models
     [Table("Cliente")]
     public class Cliente : Pessoa
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public int IdCliente { get; set; }
     }
 }

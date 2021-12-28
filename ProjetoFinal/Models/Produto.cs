@@ -11,20 +11,22 @@ namespace ProjetoFinal.Models
     public class Produto
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public int IdProduto { get; set; }
 
-        [Required]
         [StringLength(80)]
+        public string Nome { get; set; }
+
+        [StringLength(140)]
         public string Descricao { get; set; }
 
-        [Required]
         public decimal Preco { get; set; }
 
-        [Required]
         public int Estoque { get; set; }
 
-        [Required]
+        public string UrlImagem { get; set; }
+
+        // FK Vendedor
         public int IdVendedor { get; set; }
+        public Vendedor Vendedor { get; set; }
     }
 }

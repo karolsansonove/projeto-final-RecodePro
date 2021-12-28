@@ -11,7 +11,6 @@ namespace ProjetoFinal.Models
     public class Pedido
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public int IdPedido { get; set; }
 
         [Required]
@@ -20,7 +19,9 @@ namespace ProjetoFinal.Models
         [Required]
         public DateTime PrazoEntrega { get; set; }
 
+        // FK Cliente
         [Required]
         public int IdCliente { get; set; }
+        public Cliente Cliente { get; set; }
     }
 }

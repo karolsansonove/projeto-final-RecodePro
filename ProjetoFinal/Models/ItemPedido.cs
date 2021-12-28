@@ -11,16 +11,19 @@ namespace ProjetoFinal.Models
     public class ItemPedido
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public int IdItemPedido { get; set; }
 
         [Required]
-        public int IdProduto { get; set; }
+        public int Quantidade { get; set; }
 
+        // FK Produto
+        [Required]
+        public int IdProduto { get; set; }
+        public Pedido Produto { get; set; }
+
+        // FK Pedido
         [Required]
         public int IdPedido { get; set; }
-
-        [Required]
-        public int Quantidade { get; set; }
+        public Pedido Pedido { get; set; }
     }
 }
