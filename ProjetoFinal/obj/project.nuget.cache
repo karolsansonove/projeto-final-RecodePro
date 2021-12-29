@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "iJfRnob0Ka1Xu8eh1FqQ119kXJVYuceCW04t3u7CKkoJevna6tmCXmhML/BkSE32vcfHhPBgrxrB8dOWfPktzQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\karol\\Documents\\Cursos\\Recode\\projeto-final\\ProjetoFinal\\ProjetoFinal\\ProjetoFinal.csproj",
+=======
+  "dgSpecHash": "M0DoC3SeRrCYxWouXOq19LbcSQ6B4Zwu5wvx63xtXjUyL4Ua+j8Ew99r2Sr79zUOUFlwpTAr+Q/WP41DR2I/0A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Remakker\\Desktop\\projeto-final-RECODEPRO\\projeto-final-RecodePro\\ProjetoFinal\\ProjetoFinal.csproj",
+>>>>>>> origin/nav-footer
   "expectedPackageFiles": [
     "C:\\Users\\karol\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\karol\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
