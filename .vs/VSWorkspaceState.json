@@ -3,8 +3,9 @@
     "",
     "\\ProjetoFinal",
     "\\ProjetoFinal\\Models",
-    "\\ProjetoFinal\\wwwroot"
+    "\\ProjetoFinal\\Views",
+    "\\ProjetoFinal\\Views\\Home"
   ],
-  "SelectedNode": "\\ProjetoFinal\\Models\\ItemPedido.cs",
+  "SelectedNode": "\\ProjetoFinal\\Views\\Home\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }
