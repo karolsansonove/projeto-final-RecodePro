@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Remakker\\Desktop\\projeto-final-RecodePro\\projeto-final-RecodePro\\ProjetoFinal\\ProjetoFinal.csproj": {}
+    "C:\\Users\\Remakker\\Desktop\\projeto-final-RECODEPRO\\projeto-final-RecodePro\\ProjetoFinal\\ProjetoFinal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Remakker\\Desktop\\projeto-final-RecodePro\\projeto-final-RecodePro\\ProjetoFinal\\ProjetoFinal.csproj": {
+    "C:\\Users\\Remakker\\Desktop\\projeto-final-RECODEPRO\\projeto-final-RecodePro\\ProjetoFinal\\ProjetoFinal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Remakker\\Desktop\\projeto-final-RecodePro\\projeto-final-RecodePro\\ProjetoFinal\\ProjetoFinal.csproj",
+        "projectUniqueName": "C:\\Users\\Remakker\\Desktop\\projeto-final-RECODEPRO\\projeto-final-RecodePro\\ProjetoFinal\\ProjetoFinal.csproj",
         "projectName": "ProjetoFinal",
-        "projectPath": "C:\\Users\\Remakker\\Desktop\\projeto-final-RecodePro\\projeto-final-RecodePro\\ProjetoFinal\\ProjetoFinal.csproj",
+        "projectPath": "C:\\Users\\Remakker\\Desktop\\projeto-final-RECODEPRO\\projeto-final-RecodePro\\ProjetoFinal\\ProjetoFinal.csproj",
         "packagesPath": "C:\\Users\\Remakker\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Remakker\\Desktop\\projeto-final-RecodePro\\projeto-final-RecodePro\\ProjetoFinal\\obj\\",
+        "outputPath": "C:\\Users\\Remakker\\Desktop\\projeto-final-RECODEPRO\\projeto-final-RecodePro\\ProjetoFinal\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
