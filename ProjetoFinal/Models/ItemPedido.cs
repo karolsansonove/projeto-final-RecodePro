@@ -19,7 +19,7 @@ namespace ProjetoFinal.Models
         // FK Produto
         [Required]
         public int IdProduto { get; set; }
-        public Pedido Produto { get; set; }
+        public Produto Produto { get; set; }
 
         // FK Pedido
         [Required]
