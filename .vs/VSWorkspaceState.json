@@ -2,7 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\ProjetoFinal",
-    "\\ProjetoFinal\\Models"
+    "\\ProjetoFinal\\Models",
+    "\\ProjetoFinal\\wwwroot"
   ],
   "SelectedNode": "\\ProjetoFinal\\Models\\ItemPedido.cs",
   "PreviewInSolutionExplorer": false
