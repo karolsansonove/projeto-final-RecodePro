@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Remakker\\Desktop\\projeto-final-RecodePro\\projeto-final-RecodePro\\ProjetoFinal\\ProjetoFinal.csproj": {}
+    "C:\\Users\\karol\\Documents\\Cursos\\Recode\\projeto-final\\ProjetoFinal\\ProjetoFinal\\ProjetoFinal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Remakker\\Desktop\\projeto-final-RecodePro\\projeto-final-RecodePro\\ProjetoFinal\\ProjetoFinal.csproj": {
+    "C:\\Users\\karol\\Documents\\Cursos\\Recode\\projeto-final\\ProjetoFinal\\ProjetoFinal\\ProjetoFinal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Remakker\\Desktop\\projeto-final-RecodePro\\projeto-final-RecodePro\\ProjetoFinal\\ProjetoFinal.csproj",
+        "projectUniqueName": "C:\\Users\\karol\\Documents\\Cursos\\Recode\\projeto-final\\ProjetoFinal\\ProjetoFinal\\ProjetoFinal.csproj",
         "projectName": "ProjetoFinal",
-        "projectPath": "C:\\Users\\Remakker\\Desktop\\projeto-final-RecodePro\\projeto-final-RecodePro\\ProjetoFinal\\ProjetoFinal.csproj",
-        "packagesPath": "C:\\Users\\Remakker\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Remakker\\Desktop\\projeto-final-RecodePro\\projeto-final-RecodePro\\ProjetoFinal\\obj\\",
+        "projectPath": "C:\\Users\\karol\\Documents\\Cursos\\Recode\\projeto-final\\ProjetoFinal\\ProjetoFinal\\ProjetoFinal.csproj",
+        "packagesPath": "C:\\Users\\karol\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\karol\\Documents\\Cursos\\Recode\\projeto-final\\ProjetoFinal\\ProjetoFinal\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Remakker\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\karol\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -80,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

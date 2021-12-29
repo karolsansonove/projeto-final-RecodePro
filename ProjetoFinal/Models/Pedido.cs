@@ -25,5 +25,11 @@ namespace ProjetoFinal.Models
         public Cliente Cliente { get; set; }
 
         public List<ItemPedido> ItensPedido { get; set; }
+
+        public Pedido()
+        {
+            this.DataPedido = DateTime.Today;
+            this.PrazoEntrega = DataPedido.AddDays(10);
+        }
     }
 }
