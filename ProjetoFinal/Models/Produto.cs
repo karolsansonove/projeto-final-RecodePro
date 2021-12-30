@@ -25,8 +25,8 @@ namespace ProjetoFinal.Models
 
         public string UrlImagem { get; set; }
 
-        // FK Vendedor
-        public int IdVendedor { get; set; }
-        public Vendedor Vendedor { get; set; }
+        // FK Artesao
+        public int ArtesaoIdArtesao { get; set; }
+        public Artesao Artesao { get; set; }
     }
 }

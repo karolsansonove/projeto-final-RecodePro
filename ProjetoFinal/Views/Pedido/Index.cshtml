@@ -4,22 +4,22 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Pedidos</h1>
+<h1>Index</h1>
 
 <p>
-    <a asp-action="Create">Novo Pedido</a>
+    <a asp-action="Create">Create New</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                Data do pedido
+                @Html.DisplayNameFor(model => model.DataPedido)
             </th>
             <th>
-                Prazo de entrega
+                @Html.DisplayNameFor(model => model.Cliente)
             </th>
             <th>
-                ID Cliente
+                @Html.DisplayNameFor(model => model.Produto)
             </th>
             <th></th>
         </tr>
@@ -31,15 +31,15 @@
                 @Html.DisplayFor(modelItem => item.DataPedido)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.PrazoEntrega)
+                @Html.DisplayFor(modelItem => item.Cliente.IdCliente)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.IdCliente)
+                @Html.DisplayFor(modelItem => item.Produto.IdProduto)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.IdPedido">Editar</a> |
-                <a asp-action="Details" asp-route-id="@item.IdPedido">Detalhes</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdPedido">Excluir</a>
+                <a asp-action="Edit" asp-route-id="@item.IdPedido">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdPedido">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdPedido">Delete</a>
             </td>
         </tr>
 }

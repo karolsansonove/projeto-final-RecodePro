@@ -16,20 +16,19 @@ namespace ProjetoFinal.Models
         [Required]
         public DateTime DataPedido { get; set; }
 
-        [Required]
-        public DateTime PrazoEntrega { get; set; }
-
         // FK Cliente
         [Required]
-        public int IdCliente { get; set; }
+        public int ClienteIdCliente { get; set; }
         public Cliente Cliente { get; set; }
 
-        public List<ItemPedido> ItensPedido { get; set; }
+        //Fk Produto
+        public int ProdutoIdProduto { get; set; }
+        public Produto Produto { get; set; }
 
         public Pedido()
         {
             this.DataPedido = DateTime.Today;
-            this.PrazoEntrega = DataPedido.AddDays(10);
+           
         }
     }
 }
