@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\ProjetoFinal",
-    "\\ProjetoFinal\\Models"
+    "\\ProjetoFinal\\Models",
+    "\\ProjetoFinal\\Views",
+    "\\ProjetoFinal\\Views\\Home"
   ],
-  "SelectedNode": "\\ProjetoFinal\\Models\\ItemPedido.cs",
+  "SelectedNode": "\\ProjetoFinal\\Views\\Home\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }
