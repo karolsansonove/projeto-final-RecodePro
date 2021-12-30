@@ -1,6 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Home";
 }
+<link rel="stylesheet" href="~/css/site.css" />
 
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
@@ -22,5 +23,56 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
+</div>
+
+<h1>Sugestões para você</h1>
+
+<div class="container my-4">
+    <div class="row">
+        <div class="col-4 my-4">
+            <div class="card">
+                <img class="card-img-top" src="~/css/Imagens/brincos (1).png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Brincos</h4>
+                    <p class="card-text">
+                    <p>
+                        Brincos confeccionadas artesanalmente
+                    </p>
+                    </p>
+                    <a class="btn btn-success" asp-controller="Produto" asp-action="Index">Conferir</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4 my-4">
+            <div class="card">
+                <img class="card-img-top" src="~/css/Imagens/potes (1).jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Potes</h4>
+                    <p class="card-text">
+                    <p>
+                        Potes especiais da floresta
+                    </p>
+                    </p>
+                    <a class="btn btn-success" asp-controller="Produto" asp-action="Index">Conferir</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4 my-4">
+            <div class="card">
+                <img class="card-img-top" src="~/css/Imagens/cestoo.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Cestos</h4>
+                    <p class="card-text">
+                    <p>
+                      Cestos especiais da aldeia
+                    </p>
+                    </p>
+                    <a class="btn btn-success" asp-controller="Produto" asp-action="Index">Conferir</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
