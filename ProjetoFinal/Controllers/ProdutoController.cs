@@ -22,7 +22,8 @@ namespace ProjetoFinal.Controllers
         // GET: Produto
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Produtos.ToListAsync());
+            var projetoFinalDbContext = _context.Produto.Include(p => p.Artesao);
+            return View(await projetoFinalDbContext.ToListAsync());
         }
 
         // GET: Produto/Details/5
@@ -33,7 +34,8 @@ namespace ProjetoFinal.Controllers
                 return NotFound();
             }
 
-            var produto = await _context.Produtos
+            var produto = await _context.Produto
+                .Include(p => p.Artesao)
                 .FirstOrDefaultAsync(m => m.IdProduto == id);
             if (produto == null)
             {
@@ -46,6 +48,7 @@ namespace ProjetoFinal.Controllers
         // GET: Produto/Create
         public IActionResult Create()
         {
+            ViewData["ArtesaoIdArtesao"] = new SelectList(_context.Artesao, "IdArtesao", "IdArtesao");
             return View();
         }
 
@@ -54,7 +57,7 @@ namespace ProjetoFinal.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdProduto,Nome,Descricao,Preco,Estoque,UrlImagem,IdVendedor")] Produto produto)
+        public async Task<IActionResult> Create([Bind("IdProduto,Nome,Descricao,Preco,Estoque,UrlImagem,ArtesaoIdArtesao")] Produto produto)
         {
             if (ModelState.IsValid)
             {
@@ -62,6 +65,7 @@ namespace ProjetoFinal.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["ArtesaoIdArtesao"] = new SelectList(_context.Artesao, "IdArtesao", "IdArtesao", produto.ArtesaoIdArtesao);
             return View(produto);
         }
 
@@ -73,11 +77,12 @@ namespace ProjetoFinal.Controllers
                 return NotFound();
             }
 
-            var produto = await _context.Produtos.FindAsync(id);
+            var produto = await _context.Produto.FindAsync(id);
             if (produto == null)
             {
                 return NotFound();
             }
+            ViewData["ArtesaoIdArtesao"] = new SelectList(_context.Artesao, "IdArtesao", "IdArtesao", produto.ArtesaoIdArtesao);
             return View(produto);
         }
 
@@ -86,7 +91,7 @@ namespace ProjetoFinal.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdProduto,Nome,Descricao,Preco,Estoque,UrlImagem,IdVendedor")] Produto produto)
+        public async Task<IActionResult> Edit(int id, [Bind("IdProduto,Nome,Descricao,Preco,Estoque,UrlImagem,ArtesaoIdArtesao")] Produto produto)
         {
             if (id != produto.IdProduto)
             {
@@ -113,6 +118,7 @@ namespace ProjetoFinal.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["ArtesaoIdArtesao"] = new SelectList(_context.Artesao, "IdArtesao", "IdArtesao", produto.ArtesaoIdArtesao);
             return View(produto);
         }
 
@@ -124,7 +130,8 @@ namespace ProjetoFinal.Controllers
                 return NotFound();
             }
 
-            var produto = await _context.Produtos
+            var produto = await _context.Produto
+                .Include(p => p.Artesao)
                 .FirstOrDefaultAsync(m => m.IdProduto == id);
             if (produto == null)
             {
@@ -139,15 +146,15 @@ namespace ProjetoFinal.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var produto = await _context.Produtos.FindAsync(id);
-            _context.Produtos.Remove(produto);
+            var produto = await _context.Produto.FindAsync(id);
+            _context.Produto.Remove(produto);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool ProdutoExists(int id)
         {
-            return _context.Produtos.Any(e => e.IdProduto == id);
+            return _context.Produto.Any(e => e.IdProduto == id);
         }
     }
 }

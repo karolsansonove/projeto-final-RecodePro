@@ -12,11 +12,11 @@ namespace ProjetoFinal.Data
         public ProjetoFinalDbContext(DbContextOptions<ProjetoFinalDbContext> opt) : base(opt)
         {
         }
-        public DbSet<Pessoa> Pessoas { get; set; }
-        public DbSet<Cliente> Clientes { get; set; }
-        public DbSet<Vendedor> Vendedores { get; set; }
-        public DbSet<Produto> Produtos { get; set; }
-        public DbSet<Pedido> Pedidos { get; set; }
-        public DbSet<ItemPedido> ItemsPedidos { get; set; }
+        
+        public DbSet<Cliente> Cliente { get; set; }
+        public DbSet<Artesao> Artesao { get; set; }
+        public DbSet<Produto> Produto { get; set; }
+        public DbSet<Pedido> Pedido { get; set; }
+        public DbSet<Suporte> Suporte { get; set; }
     }
 }

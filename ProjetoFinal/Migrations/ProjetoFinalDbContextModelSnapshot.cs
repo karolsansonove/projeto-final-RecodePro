@@ -16,69 +16,31 @@ namespace ProjetoFinal.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("ProductVersion", "5.0.8")
+                .HasAnnotation("ProductVersion", "5.0.12")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("ProjetoFinal.Models.ItemPedido", b =>
+            modelBuilder.Entity("ProjetoFinal.Models.Artesao", b =>
                 {
-                    b.Property<int>("IdItemPedido")
+                    b.Property<int>("IdArtesao")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("IdPedido")
-                        .HasColumnType("int");
+                    b.Property<string>("email")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("IdProduto")
-                        .HasColumnType("int");
+                    b.Property<string>("senha")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(1)");
 
-                    b.Property<int?>("PedidoIdPedido")
-                        .HasColumnType("int");
+                    b.HasKey("IdArtesao");
 
-                    b.Property<int?>("ProdutoIdPedido")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Quantidade")
-                        .HasColumnType("int");
-
-                    b.HasKey("IdItemPedido");
-
-                    b.HasIndex("PedidoIdPedido");
-
-                    b.HasIndex("ProdutoIdPedido");
-
-                    b.ToTable("ItemPedido");
+                    b.ToTable("Artesao");
                 });
 
-            modelBuilder.Entity("ProjetoFinal.Models.Pedido", b =>
+            modelBuilder.Entity("ProjetoFinal.Models.Cliente", b =>
                 {
-                    b.Property<int>("IdPedido")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int?>("ClienteIdPessoa")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("DataPedido")
-                        .HasColumnType("datetime2");
-
                     b.Property<int>("IdCliente")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("PrazoEntrega")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("IdPedido");
-
-                    b.HasIndex("ClienteIdPessoa");
-
-                    b.ToTable("Pedido");
-                });
-
-            modelBuilder.Entity("ProjetoFinal.Models.Pessoa", b =>
-                {
-                    b.Property<int>("IdPessoa")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -119,9 +81,34 @@ namespace ProjetoFinal.Migrations
                         .HasMaxLength(2)
                         .HasColumnType("nvarchar(2)");
 
-                    b.HasKey("IdPessoa");
+                    b.HasKey("IdCliente");
 
-                    b.ToTable("Pessoa");
+                    b.ToTable("Cliente");
+                });
+
+            modelBuilder.Entity("ProjetoFinal.Models.Pedido", b =>
+                {
+                    b.Property<int>("IdPedido")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("ClienteIdCliente")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("DataPedido")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("ProdutoIdProduto")
+                        .HasColumnType("int");
+
+                    b.HasKey("IdPedido");
+
+                    b.HasIndex("ClienteIdCliente");
+
+                    b.HasIndex("ProdutoIdProduto");
+
+                    b.ToTable("Pedido");
                 });
 
             modelBuilder.Entity("ProjetoFinal.Models.Produto", b =>
@@ -131,14 +118,14 @@ namespace ProjetoFinal.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int>("ArtesaoIdArtesao")
+                        .HasColumnType("int");
+
                     b.Property<string>("Descricao")
                         .HasMaxLength(140)
                         .HasColumnType("nvarchar(140)");
 
                     b.Property<int>("Estoque")
-                        .HasColumnType("int");
-
-                    b.Property<int>("IdVendedor")
                         .HasColumnType("int");
 
                     b.Property<string>("Nome")
@@ -151,85 +138,72 @@ namespace ProjetoFinal.Migrations
                     b.Property<string>("UrlImagem")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("VendedorIdPessoa")
-                        .HasColumnType("int");
-
                     b.HasKey("IdProduto");
 
-                    b.HasIndex("VendedorIdPessoa");
+                    b.HasIndex("ArtesaoIdArtesao");
 
                     b.ToTable("Produto");
                 });
 
-            modelBuilder.Entity("ProjetoFinal.Models.Cliente", b =>
+            modelBuilder.Entity("ProjetoFinal.Models.Suporte", b =>
                 {
-                    b.HasBaseType("ProjetoFinal.Models.Pessoa");
+                    b.Property<int>("IdSuporte")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("IdCliente")
+                    b.Property<int>("ClienteIdCliente")
                         .HasColumnType("int");
 
-                    b.ToTable("Cliente");
-                });
+                    b.Property<string>("Mensagem")
+                        .HasColumnType("nvarchar(max)");
 
-            modelBuilder.Entity("ProjetoFinal.Models.Vendedor", b =>
-                {
-                    b.HasBaseType("ProjetoFinal.Models.Pessoa");
+                    b.HasKey("IdSuporte");
 
-                    b.Property<int>("IdVendedor")
-                        .HasColumnType("int");
+                    b.HasIndex("ClienteIdCliente");
 
-                    b.ToTable("Vendedor");
-                });
-
-            modelBuilder.Entity("ProjetoFinal.Models.ItemPedido", b =>
-                {
-                    b.HasOne("ProjetoFinal.Models.Pedido", "Pedido")
-                        .WithMany()
-                        .HasForeignKey("PedidoIdPedido");
-
-                    b.HasOne("ProjetoFinal.Models.Pedido", "Produto")
-                        .WithMany()
-                        .HasForeignKey("ProdutoIdPedido");
-
-                    b.Navigation("Pedido");
-
-                    b.Navigation("Produto");
+                    b.ToTable("Suporte");
                 });
 
             modelBuilder.Entity("ProjetoFinal.Models.Pedido", b =>
                 {
                     b.HasOne("ProjetoFinal.Models.Cliente", "Cliente")
                         .WithMany()
-                        .HasForeignKey("ClienteIdPessoa");
+                        .HasForeignKey("ClienteIdCliente")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ProjetoFinal.Models.Produto", "Produto")
+                        .WithMany()
+                        .HasForeignKey("ProdutoIdProduto")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Cliente");
+
+                    b.Navigation("Produto");
                 });
 
             modelBuilder.Entity("ProjetoFinal.Models.Produto", b =>
                 {
-                    b.HasOne("ProjetoFinal.Models.Vendedor", "Vendedor")
+                    b.HasOne("ProjetoFinal.Models.Artesao", "Artesao")
                         .WithMany()
-                        .HasForeignKey("VendedorIdPessoa");
+                        .HasForeignKey("ArtesaoIdArtesao")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Navigation("Vendedor");
+                    b.Navigation("Artesao");
                 });
 
-            modelBuilder.Entity("ProjetoFinal.Models.Cliente", b =>
+            modelBuilder.Entity("ProjetoFinal.Models.Suporte", b =>
                 {
-                    b.HasOne("ProjetoFinal.Models.Pessoa", null)
-                        .WithOne()
-                        .HasForeignKey("ProjetoFinal.Models.Cliente", "IdPessoa")
-                        .OnDelete(DeleteBehavior.ClientCascade)
+                    b.HasOne("ProjetoFinal.Models.Cliente", "Cliente")
+                        .WithMany()
+                        .HasForeignKey("ClienteIdCliente")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
 
-            modelBuilder.Entity("ProjetoFinal.Models.Vendedor", b =>
-                {
-                    b.HasOne("ProjetoFinal.Models.Pessoa", null)
-                        .WithOne()
-                        .HasForeignKey("ProjetoFinal.Models.Vendedor", "IdPessoa")
-                        .OnDelete(DeleteBehavior.ClientCascade)
-                        .IsRequired();
+                    b.Navigation("Cliente");
                 });
 #pragma warning restore 612, 618
         }

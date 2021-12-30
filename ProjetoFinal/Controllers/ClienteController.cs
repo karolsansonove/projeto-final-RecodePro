@@ -22,7 +22,7 @@ namespace ProjetoFinal.Controllers
         // GET: Cliente
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Clientes.ToListAsync());
+            return View(await _context.Cliente.ToListAsync());
         }
 
         // GET: Cliente/Details/5
@@ -33,8 +33,8 @@ namespace ProjetoFinal.Controllers
                 return NotFound();
             }
 
-            var cliente = await _context.Clientes
-                .FirstOrDefaultAsync(m => m.IdPessoa == id);
+            var cliente = await _context.Cliente
+                .FirstOrDefaultAsync(m => m.IdCliente == id);
             if (cliente == null)
             {
                 return NotFound();
@@ -54,7 +54,7 @@ namespace ProjetoFinal.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdCliente,IdPessoa,Nome,Cpf,Email,Senha,Telefone,Endereco,Cep,Cidade,Uf")] Cliente cliente)
+        public async Task<IActionResult> Create([Bind("IdCliente,Nome,Cpf,Email,Senha,Telefone,Endereco,Cep,Cidade,Uf")] Cliente cliente)
         {
             if (ModelState.IsValid)
             {
@@ -73,7 +73,7 @@ namespace ProjetoFinal.Controllers
                 return NotFound();
             }
 
-            var cliente = await _context.Clientes.FindAsync(id);
+            var cliente = await _context.Cliente.FindAsync(id);
             if (cliente == null)
             {
                 return NotFound();
@@ -86,9 +86,9 @@ namespace ProjetoFinal.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdCliente,IdPessoa,Nome,Cpf,Email,Senha,Telefone,Endereco,Cep,Cidade,Uf")] Cliente cliente)
+        public async Task<IActionResult> Edit(int id, [Bind("IdCliente,Nome,Cpf,Email,Senha,Telefone,Endereco,Cep,Cidade,Uf")] Cliente cliente)
         {
-            if (id != cliente.IdPessoa)
+            if (id != cliente.IdCliente)
             {
                 return NotFound();
             }
@@ -102,7 +102,7 @@ namespace ProjetoFinal.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ClienteExists(cliente.IdPessoa))
+                    if (!ClienteExists(cliente.IdCliente))
                     {
                         return NotFound();
                     }
@@ -124,8 +124,8 @@ namespace ProjetoFinal.Controllers
                 return NotFound();
             }
 
-            var cliente = await _context.Clientes
-                .FirstOrDefaultAsync(m => m.IdPessoa == id);
+            var cliente = await _context.Cliente
+                .FirstOrDefaultAsync(m => m.IdCliente == id);
             if (cliente == null)
             {
                 return NotFound();
@@ -139,15 +139,15 @@ namespace ProjetoFinal.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var cliente = await _context.Clientes.FindAsync(id);
-            _context.Clientes.Remove(cliente);
+            var cliente = await _context.Cliente.FindAsync(id);
+            _context.Cliente.Remove(cliente);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool ClienteExists(int id)
         {
-            return _context.Clientes.Any(e => e.IdPessoa == id);
+            return _context.Cliente.Any(e => e.IdCliente == id);
         }
     }
 }
