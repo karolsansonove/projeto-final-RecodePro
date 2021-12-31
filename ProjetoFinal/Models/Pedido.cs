@@ -28,7 +28,6 @@ namespace ProjetoFinal.Models
         public Pedido()
         {
             this.DataPedido = DateTime.Today;
-           
         }
     }
 }

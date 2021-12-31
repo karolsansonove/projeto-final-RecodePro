@@ -1,7 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "C:\\Users\\karol\\Documents\\Cursos\\Recode\\projeto-final\\projeto-final-RecodePro\\ProjetoFinal\\ProjetoFinal.csproj": {}
   },
   "projects": {
@@ -13,29 +12,12 @@
         "projectPath": "C:\\Users\\karol\\Documents\\Cursos\\Recode\\projeto-final\\projeto-final-RecodePro\\ProjetoFinal\\ProjetoFinal.csproj",
         "packagesPath": "C:\\Users\\karol\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\karol\\Documents\\Cursos\\Recode\\projeto-final\\projeto-final-RecodePro\\ProjetoFinal\\obj\\",
-=======
-    "C:\\Users\\Remakker\\Desktop\\projeto-final-RECODEPRO\\projeto-final-RecodePro\\ProjetoFinal\\ProjetoFinal.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\Remakker\\Desktop\\projeto-final-RECODEPRO\\projeto-final-RecodePro\\ProjetoFinal\\ProjetoFinal.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Remakker\\Desktop\\projeto-final-RECODEPRO\\projeto-final-RecodePro\\ProjetoFinal\\ProjetoFinal.csproj",
-        "projectName": "ProjetoFinal",
-        "projectPath": "C:\\Users\\Remakker\\Desktop\\projeto-final-RECODEPRO\\projeto-final-RecodePro\\ProjetoFinal\\ProjetoFinal.csproj",
-        "packagesPath": "C:\\Users\\Remakker\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Remakker\\Desktop\\projeto-final-RECODEPRO\\projeto-final-RecodePro\\ProjetoFinal\\obj\\",
->>>>>>> origin/home2
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-<<<<<<< HEAD
           "C:\\Users\\karol\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-          "C:\\Users\\Remakker\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> origin/home2
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -102,11 +84,7 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
->>>>>>> origin/home2
         }
       }
     }

@@ -14,6 +14,8 @@ namespace ProjetoFinal.Models
         [Required]
         public int IdArtesao { get; set; }
 
+        public string NomeArtesao { get; set; }
+
         public char senha { get; set; }
         public string email { get; set; }
     }

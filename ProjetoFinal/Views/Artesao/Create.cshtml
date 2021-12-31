@@ -13,13 +13,18 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="senha" class="control-label"></label>
+                <label asp-for="senha" class="control-label">Senha</label>
                 <input asp-for="senha" class="form-control" />
                 <span asp-validation-for="senha" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="email" class="control-label"></label>
-                <input asp-for="email" class="form-control" />
+                <label asp-for="NomeArtesao" class="control-label">Nome do Artesão</label>
+                <input asp-for="NomeArtesao" class="form-control" />
+                <span asp-validation-for="NomeArtesao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="email" class="control-label">E-mail</label>
+                <input asp-for="email" class="form-control" type="password"/>
                 <span asp-validation-for="email" class="text-danger"></span>
             </div>
             <div class="form-group">
