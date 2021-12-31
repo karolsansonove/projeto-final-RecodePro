@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ProjetoFinal.Migrations
 {
-    public partial class ProjetoFinal : Migration
+    public partial class InitialCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -13,8 +13,9 @@ namespace ProjetoFinal.Migrations
                 {
                     IdArtesao = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    senha = table.Column<string>(type: "nvarchar(1)", nullable: false),
-                    email = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    NomeArtesao = table.Column<string>(type: "nvarchar(80)", maxLength: 80, nullable: true),
+                    senha = table.Column<string>(type: "nvarchar(8)", maxLength: 8, nullable: true),
+                    email = table.Column<string>(type: "nvarchar(45)", maxLength: 45, nullable: true)
                 },
                 constraints: table =>
                 {

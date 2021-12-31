@@ -14,12 +14,7 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="IdArtesao" />
             <div class="form-group">
-                <label asp-for="senha" class="control-label">Senha</label>
-                <input asp-for="senha" class="form-control" type="password"/>
-                <span asp-validation-for="senha" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="NomeArtesao" class="control-label">Nome do Artesão</label>
+                <label asp-for="NomeArtesao" class="control-label">Nome</label>
                 <input asp-for="NomeArtesao" class="form-control" />
                 <span asp-validation-for="NomeArtesao" class="text-danger"></span>
             </div>
@@ -27,6 +22,11 @@
                 <label asp-for="email" class="control-label">E-mail</label>
                 <input asp-for="email" class="form-control" />
                 <span asp-validation-for="email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="senha" class="control-label">Senha</label>
+                <input asp-for="senha" class="form-control" type="password" />
+                <span asp-validation-for="senha" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
