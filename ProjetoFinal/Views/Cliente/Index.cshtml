@@ -15,27 +15,35 @@
             <th>
                 @Html.DisplayNameFor(model => model.Nome)
             </th>
+            <th></th>
             <th>
                 @Html.DisplayNameFor(model => model.Cpf)
             </th>
+            <th></th>
             <th>
                 @Html.DisplayNameFor(model => model.Email)
             </th>
+            <th></th>
             <th>
                 @Html.DisplayNameFor(model => model.Senha)
             </th>
+            <th></th>
             <th>
                 @Html.DisplayNameFor(model => model.Telefone)
             </th>
+            <th></th>
             <th>
                 @Html.DisplayNameFor(model => model.Endereco)
             </th>
+            <th></th>
             <th>
                 @Html.DisplayNameFor(model => model.Cep)
             </th>
+            <th></th>
             <th>
                 @Html.DisplayNameFor(model => model.Cidade)
             </th>
+            <th></th>
             <th>
                 @Html.DisplayNameFor(model => model.Uf)
             </th>
@@ -43,41 +51,53 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Cpf)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Senha)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Telefone)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Endereco)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Cep)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Cidade)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Uf)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.IdCliente">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdCliente">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdCliente">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cpf)
+                </td>
+                <td></td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td></td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Senha)
+                </td>
+                <td></td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Telefone)
+                </td>
+                <td></td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Endereco)
+                </td>
+                <td></td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cep)
+                </td>
+                <td></td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cidade)
+                </td>
+                <td></td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Uf)
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.IdCliente">Editar</a> |
+                    <a asp-action="Details" asp-route-id="@item.IdCliente">Detalhes</a> |
+                    <a asp-action="Delete" asp-route-id="@item.IdCliente">Excluir</a>
+                </td>
+            </tr>
+    }
+        </tbody>
+    </table>
