@@ -881,21 +881,11 @@ C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\Projet
 C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Cliente\Index.cshtml.g.cs
 C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
-C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\ItemPedido\Create.cshtml.g.cs
-C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\ItemPedido\Delete.cshtml.g.cs
-C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\ItemPedido\Details.cshtml.g.cs
-C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\ItemPedido\Edit.cshtml.g.cs
-C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\ItemPedido\Index.cshtml.g.cs
 C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Pedido\Create.cshtml.g.cs
 C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Pedido\Delete.cshtml.g.cs
 C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Pedido\Details.cshtml.g.cs
 C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Pedido\Edit.cshtml.g.cs
 C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Pedido\Index.cshtml.g.cs
-C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Pessoa\Create.cshtml.g.cs
-C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Pessoa\Delete.cshtml.g.cs
-C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Pessoa\Details.cshtml.g.cs
-C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Pessoa\Edit.cshtml.g.cs
-C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Pessoa\Index.cshtml.g.cs
 C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Produto\Create.cshtml.g.cs
 C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Produto\Delete.cshtml.g.cs
 C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Produto\Details.cshtml.g.cs
@@ -904,11 +894,6 @@ C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\Projet
 C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
-C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Vendedor\Create.cshtml.g.cs
-C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Vendedor\Delete.cshtml.g.cs
-C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Vendedor\Details.cshtml.g.cs
-C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Vendedor\Edit.cshtml.g.cs
-C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Vendedor\Index.cshtml.g.cs
 C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
 C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\ProjetoFinal.RazorTargetAssemblyInfo.cache
@@ -1375,3 +1360,13 @@ E:\DEV SISTEMAS\Projetos Recode Pro\ProjetoFinalRecodeSquad\projeto-final-Recode
 E:\DEV SISTEMAS\Projetos Recode Pro\ProjetoFinalRecodeSquad\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Cliente\Details.cshtml.g.cs
 E:\DEV SISTEMAS\Projetos Recode Pro\ProjetoFinalRecodeSquad\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Cliente\Edit.cshtml.g.cs
 E:\DEV SISTEMAS\Projetos Recode Pro\ProjetoFinalRecodeSquad\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Cliente\Index.cshtml.g.cs
+C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Artesao\Create.cshtml.g.cs
+C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Artesao\Delete.cshtml.g.cs
+C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Artesao\Details.cshtml.g.cs
+C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Artesao\Edit.cshtml.g.cs
+C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Artesao\Index.cshtml.g.cs
+C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Suporte\Create.cshtml.g.cs
+C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Suporte\Delete.cshtml.g.cs
+C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Suporte\Details.cshtml.g.cs
+C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Suporte\Edit.cshtml.g.cs
+C:\Users\Remakker\Desktop\projeto-final-RECODEPRO\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Suporte\Index.cshtml.g.cs
