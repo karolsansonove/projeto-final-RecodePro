@@ -1,10 +1,10 @@
 ﻿@model ProjetoFinal.Models.Produto
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Produtos";
 }
 
-<h1>Details</h1>
+<h1>Detalhes sobre o Produto</h1>
 
 <div>
     <h4>Produto</h4>
@@ -35,20 +35,13 @@
             @Html.DisplayFor(model => model.Estoque)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.UrlImagem)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.UrlImagem)
-        </dd>
-        <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Artesao)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Artesao.IdArtesao)
+            @Html.DisplayFor(model => model.Artesao.NomeArtesao)
         </dd>
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.IdProduto">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a class="btn btn-success"asp-action="Index">Voltar</a>
 </div>

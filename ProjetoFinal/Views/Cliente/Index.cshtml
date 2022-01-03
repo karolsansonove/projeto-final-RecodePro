@@ -1,83 +1,79 @@
 ﻿@model IEnumerable<ProjetoFinal.Models.Cliente>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Meu Cadastro";
 }
+<link rel="stylesheet" href="~/css/site.css" />
+<h1>Cadastro</h1>
 
-<h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
+<table class="table table-hover">
     <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Nome)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Cpf)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Senha)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Telefone)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Endereco)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Cep)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Cidade)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Uf)
-            </th>
-            <th></th>
+        <tr class="table-success">
+            <th scope="col">#</th>
+            <th scope="col"> @Html.DisplayNameFor(model => model.Nome)</th>
+            <th scope="col"> @Html.DisplayNameFor(model => model.Cpf)</th>
+            <th scope="col"> @Html.DisplayNameFor(model => model.Email)</th>
+            <th scope="col"> @Html.DisplayNameFor(model => model.Senha) </th>
+            <th scope="col"> @Html.DisplayNameFor(model => model.Telefone)</th>
+            <th scope="col"> @Html.DisplayNameFor(model => model.Endereco)</th>
+            <th scope="col"> @Html.DisplayNameFor(model => model.Cep)</th>
+            <th scope="col"> @Html.DisplayNameFor(model => model.Cidade)</th>
+            <th scope="col"> @Html.DisplayNameFor(model => model.Uf)</th>
+
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Cpf)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Senha)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Telefone)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Endereco)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Cep)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Cidade)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Uf)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.IdCliente">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdCliente">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdCliente">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row">1</th>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cpf)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Senha)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Telefone)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Endereco)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cep)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cidade)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Uf)
+                </td>
+            </tr>
+            <tr>
+                <td><a asp-action="Edit" asp-route-id="@item.IdCliente">Editar</a></td>
+                <td><a asp-action="Details" asp-route-id="@item.IdCliente">Detalhes</a></td>
+                <td><a asp-action="Delete" asp-route-id="@item.IdCliente">Excluir</a></td>
+            </tr>
+         }
+       
     </tbody>
 </table>
+
+<p>
+    <a asp-action="Create">Adicionar novo Cadastro</a>
+</p>
