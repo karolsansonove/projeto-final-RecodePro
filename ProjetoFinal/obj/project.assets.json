@@ -7213,11 +7213,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Remakker\\Desktop\\proj\\projeto-final-RecodePro\\ProjetoFinal\\ProjetoFinal.csproj",
+      "projectUniqueName": "C:\\Users\\Remakker\\Desktop\\projfi\\projeto-final-RecodePro\\ProjetoFinal\\ProjetoFinal.csproj",
       "projectName": "ProjetoFinal",
-      "projectPath": "C:\\Users\\Remakker\\Desktop\\proj\\projeto-final-RecodePro\\ProjetoFinal\\ProjetoFinal.csproj",
+      "projectPath": "C:\\Users\\Remakker\\Desktop\\projfi\\projeto-final-RecodePro\\ProjetoFinal\\ProjetoFinal.csproj",
       "packagesPath": "C:\\Users\\Remakker\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Remakker\\Desktop\\proj\\projeto-final-RecodePro\\ProjetoFinal\\obj\\",
+      "outputPath": "C:\\Users\\Remakker\\Desktop\\projfi\\projeto-final-RecodePro\\ProjetoFinal\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
