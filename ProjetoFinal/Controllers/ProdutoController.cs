@@ -48,7 +48,7 @@ namespace ProjetoFinal.Controllers
         // GET: Produto/Create
         public IActionResult Create()
         {
-            ViewData["ArtesaoIdArtesao"] = new SelectList(_context.Artesao, "IdArtesao", "IdArtesao");
+            ViewData["ArtesaoIdArtesao"] = new SelectList(_context.Artesao, "IdArtesao", "NomeArtesao");
             return View();
         }
 
@@ -65,7 +65,7 @@ namespace ProjetoFinal.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ArtesaoIdArtesao"] = new SelectList(_context.Artesao, "IdArtesao", "IdArtesao", produto.ArtesaoIdArtesao);
+            ViewData["ArtesaoIdArtesao"] = new SelectList(_context.Artesao, "IdArtesao", "NomeArtesao", produto.ArtesaoIdArtesao);
             return View(produto);
         }
 
@@ -82,7 +82,7 @@ namespace ProjetoFinal.Controllers
             {
                 return NotFound();
             }
-            ViewData["ArtesaoIdArtesao"] = new SelectList(_context.Artesao, "IdArtesao", "IdArtesao", produto.ArtesaoIdArtesao);
+            ViewData["ArtesaoIdArtesao"] = new SelectList(_context.Artesao, "IdArtesao", "NomeArtesao", produto.ArtesaoIdArtesao);
             return View(produto);
         }
 
@@ -118,7 +118,7 @@ namespace ProjetoFinal.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ArtesaoIdArtesao"] = new SelectList(_context.Artesao, "IdArtesao", "IdArtesao", produto.ArtesaoIdArtesao);
+            ViewData["ArtesaoIdArtesao"] = new SelectList(_context.Artesao, "IdArtesao", "NomeArtesao", produto.ArtesaoIdArtesao);
             return View(produto);
         }
 

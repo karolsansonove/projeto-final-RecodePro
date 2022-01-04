@@ -2282,3 +2282,4 @@ C:\Users\Remakker\Desktop\proj\projeto-final-RecodePro\ProjetoFinal\obj\Debug\ne
 C:\Users\Remakker\Desktop\proj\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\ref\ProjetoFinal.dll
 C:\Users\Remakker\Desktop\proj\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\ProjetoFinal.pdb
 C:\Users\Remakker\Desktop\proj\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\ProjetoFinal.genruntimeconfig.cache
+C:\Users\karol\Documents\Cursos\Recode\projeto-final\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Cliente\MyDetails.cshtml.g.cs

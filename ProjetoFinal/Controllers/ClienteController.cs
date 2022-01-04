@@ -43,6 +43,30 @@ namespace ProjetoFinal.Controllers
             return View(cliente);
         }
 
+        public IActionResult MyDetails()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> MyDetails(string email)
+        {
+            if (email == null)
+            {
+                return NotFound();
+            }
+
+            var cliente = await _context.Cliente
+                .FirstOrDefaultAsync(m => m.Email.Equals(email));
+
+            if (cliente == null)
+            {
+                return NotFound();
+            }
+
+            return RedirectToAction(nameof(Details), new { id = cliente.IdCliente});
+        }
+
         // GET: Cliente/Create
         public IActionResult Create()
         {

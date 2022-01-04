@@ -1,0 +1,29 @@
+﻿@model ProjetoFinal.Models.Cliente;
+
+@{
+    ViewData["Title"] = "MyDetails";
+}
+
+<h1>Meu cadastro</h1>
+<hr />
+<p class="lead text-info mb-4">Entre para ver seu cadastro</p>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="MyDetails">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label">E-mail</label>
+                <input asp-for="Email" class="form-control" type="email" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Entrar" class="btn btn-primary" />
+                <a class="btn btn-success" asp-action="Index">Voltar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

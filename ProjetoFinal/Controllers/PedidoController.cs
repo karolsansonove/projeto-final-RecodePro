@@ -49,8 +49,8 @@ namespace ProjetoFinal.Controllers
         // GET: Pedido/Create
         public IActionResult Create()
         {
-            ViewData["ClienteIdCliente"] = new SelectList(_context.Cliente, "IdCliente", "IdCliente");
-            ViewData["ProdutoIdProduto"] = new SelectList(_context.Produto, "IdProduto", "IdProduto");
+            ViewData["ClienteIdCliente"] = new SelectList(_context.Cliente, "IdCliente", "Nome");
+            ViewData["ProdutoIdProduto"] = new SelectList(_context.Produto, "IdProduto", "Nome");
             return View();
         }
 
@@ -67,8 +67,8 @@ namespace ProjetoFinal.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ClienteIdCliente"] = new SelectList(_context.Cliente, "IdCliente", "IdCliente", pedido.ClienteIdCliente);
-            ViewData["ProdutoIdProduto"] = new SelectList(_context.Produto, "IdProduto", "IdProduto", pedido.ProdutoIdProduto);
+            ViewData["ClienteIdCliente"] = new SelectList(_context.Cliente, "IdCliente", "Nome", pedido.ClienteIdCliente);
+            ViewData["ProdutoIdProduto"] = new SelectList(_context.Produto, "IdProduto", "Nome", pedido.ProdutoIdProduto);
             return View(pedido);
         }
 
@@ -85,8 +85,8 @@ namespace ProjetoFinal.Controllers
             {
                 return NotFound();
             }
-            ViewData["ClienteIdCliente"] = new SelectList(_context.Cliente, "IdCliente", "IdCliente", pedido.ClienteIdCliente);
-            ViewData["ProdutoIdProduto"] = new SelectList(_context.Produto, "IdProduto", "IdProduto", pedido.ProdutoIdProduto);
+            ViewData["ClienteIdCliente"] = new SelectList(_context.Cliente, "IdCliente", "Nome", pedido.ClienteIdCliente);
+            ViewData["ProdutoIdProduto"] = new SelectList(_context.Produto, "IdProduto", "Nome", pedido.ProdutoIdProduto);
             return View(pedido);
         }
 
@@ -122,8 +122,8 @@ namespace ProjetoFinal.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ClienteIdCliente"] = new SelectList(_context.Cliente, "IdCliente", "IdCliente", pedido.ClienteIdCliente);
-            ViewData["ProdutoIdProduto"] = new SelectList(_context.Produto, "IdProduto", "IdProduto", pedido.ProdutoIdProduto);
+            ViewData["ClienteIdCliente"] = new SelectList(_context.Cliente, "IdCliente", "Nome", pedido.ClienteIdCliente);
+            ViewData["ProdutoIdProduto"] = new SelectList(_context.Produto, "IdProduto", "Nome", pedido.ProdutoIdProduto);
             return View(pedido);
         }
 
