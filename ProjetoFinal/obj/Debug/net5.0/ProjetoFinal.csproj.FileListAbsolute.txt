@@ -2742,3 +2742,4 @@ C:\Users\Remakker\Desktop\projfi\projeto-final-RecodePro\ProjetoFinal\obj\Debug\
 C:\Users\Remakker\Desktop\projfi\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\ProjetoFinal.pdb
 C:\Users\Remakker\Desktop\projfi\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\ProjetoFinal.genruntimeconfig.cache
 >>>>>>> origin/cadastroat
+E:\DEV SISTEMAS\Projetos Recode Pro\ProjetoFinalRecodeSquad\projeto-final-RecodePro\ProjetoFinal\obj\Debug\net5.0\Razor\Views\Cliente\MyDetails.cshtml.g.cs
