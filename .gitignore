@@ -702,3 +702,5 @@ obj/
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudio,aspnetcore,csharp,dotnetcoreMicrosoft.Common.CurrentVersion.targets
 *.suo
+ProjetoFinal/bin
+ProjetoFinal/obj
