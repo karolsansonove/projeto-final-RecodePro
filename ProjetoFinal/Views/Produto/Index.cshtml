@@ -19,9 +19,9 @@
                                 @Html.DisplayFor(modelItem => item.Descricao)
                             </p>
                             <p style="color: #D5EEBB;">R$ @Html.DisplayFor(modelItem => item.Preco)</p>
-                            <a asp-controller="Pedido" asp-action="Create" class="btn btn-success">Comprar</a>
                         </div>
                     </a>
+                    <a asp-controller="Pedido" asp-action="Create" class="btn btn-success">Comprar</a>
                 </div>
             </div>
         }

@@ -4,10 +4,13 @@
     ViewData["Title"] = "Meu Cadastro";
 }
 <link rel="stylesheet" href="~/css/site.css" />
-<h1>Cadastro</h1>
+<h1>Clientes</h1>
 
+<p>
+    <a asp-action="Create">Adicionar novo Cadastro</a>
+</p>
 
-<table class="table table-hover">
+<table class="table table-responsive">
     <thead>
         <tr class="table-success">
             <th scope="col">#</th>
@@ -20,6 +23,7 @@
             <th scope="col"> @Html.DisplayNameFor(model => model.Cep)</th>
             <th scope="col"> @Html.DisplayNameFor(model => model.Cidade)</th>
             <th scope="col"> @Html.DisplayNameFor(model => model.Uf)</th>
+            <th></th>
 
         </tr>
     </thead>
@@ -63,17 +67,13 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.Uf)
                 </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.IdCliente">Editar</a>
+                    <a asp-action="Details" asp-route-id="@item.IdCliente">Detalhes</a>
+                    <a asp-action="Delete" asp-route-id="@item.IdCliente">Excluir</a>
+                </td>
             </tr>
-            <tr>
-                <td><a asp-action="Edit" asp-route-id="@item.IdCliente">Editar</a></td>
-                <td><a asp-action="Details" asp-route-id="@item.IdCliente">Detalhes</a></td>
-                <td><a asp-action="Delete" asp-route-id="@item.IdCliente">Excluir</a></td>
-            </tr>
-         }
-       
+        }
+
     </tbody>
 </table>
-
-<p>
-    <a asp-action="Create">Adicionar novo Cadastro</a>
-</p>

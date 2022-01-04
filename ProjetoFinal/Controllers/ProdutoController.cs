@@ -26,6 +26,13 @@ namespace ProjetoFinal.Controllers
             return View(await projetoFinalDbContext.ToListAsync());
         }
 
+        // GET: Produto
+        public async Task<IActionResult> List()
+        {
+            var projetoFinalDbContext = _context.Produto.Include(p => p.Artesao);
+            return View(await projetoFinalDbContext.ToListAsync());
+        }
+
         // GET: Produto/Details/5
         public async Task<IActionResult> Details(int? id)
         {
