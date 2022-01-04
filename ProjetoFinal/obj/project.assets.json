@@ -7213,19 +7213,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\karol\\Documents\\Cursos\\Recode\\projeto-final\\projeto-final-RecodePro\\ProjetoFinal\\ProjetoFinal.csproj",
       "projectName": "ProjetoFinal",
       "projectPath": "C:\\Users\\karol\\Documents\\Cursos\\Recode\\projeto-final\\projeto-final-RecodePro\\ProjetoFinal\\ProjetoFinal.csproj",
       "packagesPath": "C:\\Users\\karol\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\karol\\Documents\\Cursos\\Recode\\projeto-final\\projeto-final-RecodePro\\ProjetoFinal\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\Remakker\\Desktop\\projfi\\projeto-final-RecodePro\\ProjetoFinal\\ProjetoFinal.csproj",
-      "projectName": "ProjetoFinal",
-      "projectPath": "C:\\Users\\Remakker\\Desktop\\projfi\\projeto-final-RecodePro\\ProjetoFinal\\ProjetoFinal.csproj",
-      "packagesPath": "C:\\Users\\Remakker\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Remakker\\Desktop\\projfi\\projeto-final-RecodePro\\ProjetoFinal\\obj\\",
->>>>>>> origin/cadastroat
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -7301,5 +7293,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\karol\\Documents\\Cursos\\Recode\\projeto-final\\projeto-final-RecodePro\\ProjetoFinal\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
