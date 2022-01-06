@@ -48,7 +48,7 @@ namespace ProjetoFinal.Controllers
         // GET: Suporte/Create
         public IActionResult Create()
         {
-            ViewData["ClienteIdCliente"] = new SelectList(_context.Cliente, "IdCliente", "IdCliente");
+            ViewData["ClienteIdCliente"] = new SelectList(_context.Cliente, "IdCliente", "Email");
             return View();
         }
 
@@ -65,7 +65,7 @@ namespace ProjetoFinal.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ClienteIdCliente"] = new SelectList(_context.Cliente, "IdCliente", "IdCliente", suporte.ClienteIdCliente);
+            ViewData["ClienteIdCliente"] = new SelectList(_context.Cliente, "IdCliente", "Email", suporte.ClienteIdCliente);
             return View(suporte);
         }
 
