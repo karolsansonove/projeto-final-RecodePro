@@ -12,10 +12,10 @@
             <div class="col-4 my-4">
                 <div class="card">
                     <a class="text-decoration-none" asp-action="Details" asp-route-id="@item.IdProduto">
-                        <img class="card-img-top" src="@Html.DisplayFor(modelItem => item.UrlImagem)" alt="Imagem produto" style="width:100%">
+                        <img width="150" height="250" class="card-img-top " src="@Html.DisplayFor(modelItem => item.UrlImagem)" alt="Imagem produto" style="width:100%">
                         <div class="card-body" style="background-color: #7FC8A9">
                             <h5 class="card-title" style="color: #D5EEBB;">@Html.DisplayFor(modelItem => item.Nome)</h5>
-                            <p class="card-text mb-4" style="color: #444941">
+                            <p class="card-text mb-4 overflow-hidden h-50" style="color: #444941">
                                 @Html.DisplayFor(modelItem => item.Descricao)
                             </p>
                             <p style="color: #D5EEBB;">R$ @Html.DisplayFor(modelItem => item.Preco)</p>
