@@ -50,7 +50,7 @@ namespace ProjetoFinal.Controllers
         public IActionResult Create()
         {
             ViewData["ClienteIdCliente"] = new SelectList(_context.Cliente, "IdCliente", "Nome");
-            ViewData["ProdutoIdProduto"] = new SelectList(_context.Produto, "IdProduto", "Nome");
+            ViewData["ProdutoIdProduto"] = new SelectList(_context.Produto, "IdProduto", "Descricao");
             return View();
         }
 
@@ -68,7 +68,7 @@ namespace ProjetoFinal.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["ClienteIdCliente"] = new SelectList(_context.Cliente, "IdCliente", "Nome", pedido.ClienteIdCliente);
-            ViewData["ProdutoIdProduto"] = new SelectList(_context.Produto, "IdProduto", "Nome", pedido.ProdutoIdProduto);
+            ViewData["ProdutoIdProduto"] = new SelectList(_context.Produto, "IdProduto", "Descricao", pedido.ProdutoIdProduto);
             return View(pedido);
         }
 
@@ -86,7 +86,7 @@ namespace ProjetoFinal.Controllers
                 return NotFound();
             }
             ViewData["ClienteIdCliente"] = new SelectList(_context.Cliente, "IdCliente", "Nome", pedido.ClienteIdCliente);
-            ViewData["ProdutoIdProduto"] = new SelectList(_context.Produto, "IdProduto", "Nome", pedido.ProdutoIdProduto);
+            ViewData["ProdutoIdProduto"] = new SelectList(_context.Produto, "IdProduto", "Descricao", pedido.ProdutoIdProduto);
             return View(pedido);
         }
 
@@ -123,7 +123,7 @@ namespace ProjetoFinal.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["ClienteIdCliente"] = new SelectList(_context.Cliente, "IdCliente", "Nome", pedido.ClienteIdCliente);
-            ViewData["ProdutoIdProduto"] = new SelectList(_context.Produto, "IdProduto", "Nome", pedido.ProdutoIdProduto);
+            ViewData["ProdutoIdProduto"] = new SelectList(_context.Produto, "IdProduto", "Descricao", pedido.ProdutoIdProduto);
             return View(pedido);
         }
 

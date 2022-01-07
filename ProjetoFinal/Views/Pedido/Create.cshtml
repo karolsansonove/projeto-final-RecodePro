@@ -13,15 +13,15 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="ClienteIdCliente" class="control-label"></label>
+                <label asp-for="ClienteIdCliente" class="control-label">Selecione seu nome: </label>
                 <select asp-for="ClienteIdCliente" class="form-control" asp-items="ViewBag.ClienteIdCliente"></select>
             </div>
             <div class="form-group">
-                <label asp-for="ProdutoIdProduto" class="control-label"></label>
+                <label asp-for="ProdutoIdProduto" class="control-label">Selecione o produto: </label>
                 <select asp-for="ProdutoIdProduto" class="form-control" asp-items="ViewBag.ProdutoIdProduto"></select>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Finalizar Compra" class="btn btn-primary" />
             </div>
         </form>
         <p>@Html.DisplayFor(model => model.DataPedido)</p>
@@ -29,7 +29,7 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-controller="Produto" asp-action="Index">Produtos</a>
 </div>
 
 @section Scripts {
