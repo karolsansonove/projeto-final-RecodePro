@@ -1,65 +1,60 @@
 ﻿@model IEnumerable<ProjetoFinal.Models.Produto>
 
 @{
-    ViewData["Title"] = "List";
+    ViewData["Title"] = "Produtos";
 }
 
+<<<<<<< HEAD
 <h1>Produtos</h1>
+=======
+<h1>Lista de Produtos</h1>
+>>>>>>> origin/translate
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Adicionar novo Produto</a>
 </p>
-<table class="table">
+
+<table class="table table-responsive">
     <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Nome)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Descricao)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Preco)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Estoque)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.UrlImagem)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Artesao)
-            </th>
+        <tr class="table-success">
+            <th scope="col"> @Html.DisplayNameFor(model => model.Nome)</th>
+            <th scope="col"> @Html.DisplayNameFor(model => model.Descricao)</th>
+            <th scope="col"> @Html.DisplayNameFor(model => model.Preco)</th>
+            <th scope="col"> @Html.DisplayNameFor(model => model.Estoque) </th>
+            <th scope="col"> @Html.DisplayNameFor(model => model.UrlImagem)</th>
+            <th scope="col">  @Html.DisplayNameFor(model => model.Artesao)</th>
             <th></th>
+
         </tr>
     </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Descricao)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Preco)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Estoque)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UrlImagem)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Artesao.IdArtesao)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.IdProduto">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdProduto">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdProduto">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nome)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Descricao)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Preco)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Estoque)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UrlImagem)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Artesao.NomeArtesao)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.IdProduto">Editar</a> 
+                        <a asp-action="Details" asp-route-id="@item.IdProduto">Detalhes</a> 
+                        <a asp-action="Delete" asp-route-id="@item.IdProduto">Deletar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
