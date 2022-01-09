@@ -24,6 +24,12 @@ namespace ProjetoFinal.Controllers
         {
             return View(await _context.Cliente.ToListAsync());
         }
+        public IActionResult CadastroFinalizadoCliente()
+        {
+            return View();
+        }
+
+        
 
         // GET: Cliente/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -84,7 +90,7 @@ namespace ProjetoFinal.Controllers
             {
                 _context.Add(cliente);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(CadastroFinalizadoCliente));
             }
             return View(cliente);
         }

@@ -26,6 +26,14 @@ namespace ProjetoFinal.Controllers
             return View(await projetoFinalDbContext.ToListAsync());
         }
 
+        public IActionResult MensagemEnviada()
+        {
+            
+            return View();
+        }
+
+
+        
         // GET: Suporte/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -65,7 +73,7 @@ namespace ProjetoFinal.Controllers
             {
                 _context.Add(suporte);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(MensagemEnviada));
             }
             ViewData["ClienteIdCliente"] = new SelectList(_context.Cliente, "IdCliente", "Email", suporte.ClienteIdCliente);
             ViewData["ClienteIdCliente"] = new SelectList(_context.Cliente, "IdCliente", "Nome", suporte.ClienteIdCliente);

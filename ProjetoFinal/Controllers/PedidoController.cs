@@ -26,6 +26,12 @@ namespace ProjetoFinal.Controllers
             return View(await projetoFinalDbContext.ToListAsync());
         }
 
+        public IActionResult PedidoFinalizado()
+        {
+          
+            return View();
+        }
+
         // GET: Pedido/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -65,7 +71,7 @@ namespace ProjetoFinal.Controllers
             {
                 _context.Add(pedido);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(PedidoFinalizado));
             }
             ViewData["ClienteIdCliente"] = new SelectList(_context.Cliente, "IdCliente", "Nome", pedido.ClienteIdCliente);
             ViewData["ProdutoIdProduto"] = new SelectList(_context.Produto, "IdProduto", "Descricao", pedido.ProdutoIdProduto);
