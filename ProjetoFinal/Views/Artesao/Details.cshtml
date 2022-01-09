@@ -13,10 +13,10 @@
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.senha)
+            Nome do artesão
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.senha)
+            @Html.DisplayFor(model => model.NomeArtesao)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.email)
@@ -27,6 +27,6 @@
     </dl>
 </div>
 <div>
-    <a class="btn btn-warning"  asp-action="Edit" asp-route-id="@Model.IdArtesao">Edit</a> 
+    <a class="btn btn-warning"  asp-action="Edit" asp-route-id="@Model.IdArtesao">Editar</a> 
     <a  class="btn btn-success" asp-action="Index">Voltar</a>
 </div>

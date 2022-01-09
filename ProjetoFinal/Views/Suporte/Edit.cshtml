@@ -14,17 +14,18 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="IdSuporte" />
             <div class="form-group">
-                <label asp-for="Mensagem" class="control-label"></label>
-                <input asp-for="Mensagem" class="form-control" />
-                <span asp-validation-for="Mensagem" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ClienteIdCliente" class="control-label"></label>
+                <label asp-for="ClienteIdCliente" class="control-label">Selecione seu e-mail: </label>
                 <select asp-for="ClienteIdCliente" class="form-control" asp-items="ViewBag.ClienteIdCliente"></select>
                 <span asp-validation-for="ClienteIdCliente" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <label asp-for="Mensagem" class="control-label"></label>
+                <input asp-for="Mensagem" class="form-control" />
+                <span asp-validation-for="Mensagem" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Salvar" class="btn btn-primary" />
             </div>
         </form>
     </div>

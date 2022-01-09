@@ -94,7 +94,7 @@ namespace ProjetoFinal.Controllers
             {
                 return NotFound();
             }
-            ViewData["ClienteIdCliente"] = new SelectList(_context.Cliente, "IdCliente", "IdCliente", suporte.ClienteIdCliente);
+            ViewData["ClienteIdCliente"] = new SelectList(_context.Cliente, "IdCliente", "Email", suporte.ClienteIdCliente);
             return View(suporte);
         }
 
@@ -130,7 +130,7 @@ namespace ProjetoFinal.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ClienteIdCliente"] = new SelectList(_context.Cliente, "IdCliente", "IdCliente", suporte.ClienteIdCliente);
+            ViewData["ClienteIdCliente"] = new SelectList(_context.Cliente, "IdCliente", "Email", suporte.ClienteIdCliente);
             return View(suporte);
         }
 
