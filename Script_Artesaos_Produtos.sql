@@ -27,3 +27,6 @@ insert into Produto values
 ('Cesto', 'Cesto indígena natural de palha trançado', 495.99,15,'http://d3ugyf2ht6aenh.cloudfront.net/stores/001/615/145/products/14420853099-dsc1069-00d6732458de2f5dca16349152905821-640-0.jpg',2),
 ('Bolsa', 'Bolsa indígena', 349.00, 25, 'https://d3g37he68niee0.cloudfront.net/SP/dafiti/2319597_01.jpg', 3),
 ('Bolsa', 'Bolsa indígena', 99.99, 20, 'https://d3ugyf2ht6aenh.cloudfront.net/stores/805/692/products/pic_20200423_162322-44e5dbc098de692f8915876699030113-1024-1024.jpg',4);
+
+update Produto set Descricao = 'Bolsa indígena palha natural' where IdProduto = 13;
+update Produto set Descricao = 'Bolsa indígena trançada vermelha com preto' where IdProduto = 14;

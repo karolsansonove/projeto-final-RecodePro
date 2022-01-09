@@ -141,7 +141,7 @@ namespace ProjetoFinal.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(CadastroFinalizadoCliente));
             }
             return View(cliente);
         }
