@@ -22,14 +22,16 @@
             </div>
             <div class="form-group">
                 <input type="submit" value="Finalizar Compra" class="btn btn-primary" />
+                <a class="btn btn-success" asp-controller="Produto" asp-action="Index">Produtos</a>
             </div>
         </form>
         <p>@Html.DisplayFor(model => model.DataPedido)</p>
     </div>
 </div>
 
-<div>
-    <a class="btn btn-success" asp-controller="Produto" asp-action="Index">Produtos</a>
+
+<div class="my-4">
+    <p class="lead">Não encontrou seu nome na lista? Aproveite e <a asp-controller="Cliente" asp-action="Create">cadastre-se!</a></p>
 </div>
 
 @section Scripts {
