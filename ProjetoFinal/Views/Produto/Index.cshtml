@@ -3,13 +3,16 @@
 @{
     ViewData["Title"] = "Produtos";
 }
+
+<link rel="stylesheet" href="~/css/site.css" />
+
 <h1> Nossos Produtos</h1>
-<div class="container my-4">
+<div class="container" >
     <div class="row">
         @foreach (var item in Model)
         {
 
-            <div class="col-4 my-4">
+            <div class="col-12 col-md-6 col-lg-4 my-4">
                 <div class="card">
                     <a class="text-decoration-none" asp-action="Details" asp-route-id="@item.IdProduto">
                         <img width="150" height="250" class="card-img-top " src="@Html.DisplayFor(modelItem => item.UrlImagem)" alt="Imagem produto" style="width:100%">
