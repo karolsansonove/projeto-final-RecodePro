@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ProjetoFinal.Migrations
 {
-    public partial class patiobadb : Migration
+    public partial class PatiobaBdSquad : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

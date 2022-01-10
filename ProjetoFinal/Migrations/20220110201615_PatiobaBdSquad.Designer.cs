@@ -10,8 +10,8 @@ using ProjetoFinal.Data;
 namespace ProjetoFinal.Migrations
 {
     [DbContext(typeof(ProjetoFinalDbContext))]
-    [Migration("20220110171232_patiobadb")]
-    partial class patiobadb
+    [Migration("20220110201615_PatiobaBdSquad")]
+    partial class PatiobaBdSquad
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
