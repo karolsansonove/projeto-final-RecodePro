@@ -59,10 +59,12 @@ namespace ProjetoFinal.Migrations
                         .HasColumnType("nvarchar(45)");
 
                     b.Property<string>("Cpf")
+                        .IsRequired()
                         .HasMaxLength(11)
                         .HasColumnType("nvarchar(11)");
 
                     b.Property<string>("Email")
+                        .IsRequired()
                         .HasMaxLength(45)
                         .HasColumnType("nvarchar(45)");
 
@@ -71,14 +73,17 @@ namespace ProjetoFinal.Migrations
                         .HasColumnType("nvarchar(80)");
 
                     b.Property<string>("Nome")
+                        .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("Senha")
+                        .IsRequired()
                         .HasMaxLength(8)
                         .HasColumnType("nvarchar(8)");
 
                     b.Property<string>("Telefone")
+                        .IsRequired()
                         .HasMaxLength(11)
                         .HasColumnType("nvarchar(11)");
 
