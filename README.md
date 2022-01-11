@@ -4,6 +4,8 @@ Projeto social com foco nos povos indígenas. A ideia deste projeto é o desenvo
 
 Nesse momento o sistema está sendo desenvolvido e já possui CRUD para a manipulação dos dados de todas as tabelas. Os dados ainda estão armazenados em um banco de dados local.
 
+Link da aplicação funcional: http://www.patioba.somee.com/
+
 #### Tecnologias utilizadas:
 
 * .Net
