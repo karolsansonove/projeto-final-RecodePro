@@ -4,11 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Identity;
 
 namespace ProjetoFinal.Models
 {
     [Table("Cliente")]
-    public class Cliente
+    public class Cliente 
     {
         [Key]
         [Required]

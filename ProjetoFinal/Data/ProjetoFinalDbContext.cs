@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using ProjetoFinal.Models;
 using System;
 using System.Collections.Generic;
@@ -19,4 +20,5 @@ namespace ProjetoFinal.Data
         public DbSet<Pedido> Pedido { get; set; }
         public DbSet<Suporte> Suporte { get; set; }
     }
+   
 }
