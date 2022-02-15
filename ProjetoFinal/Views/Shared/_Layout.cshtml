@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,33 +10,40 @@
     <link rel="shortcut icon" href="~/css/Imagens/icon_0513d35fcf2285494e1e0a7b18115fb2.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light border-bottom box-shadow mb-3" style="background-color: #7FC8A9;">
+        <nav class="navbar navbar-expand-lg navbar-light border-bottom box-shadow mb-3"
+            style="background-color: #7FC8A9;">
             <div class="container">
-                <a class="navbar-brand text-white mr-4 pr-4" asp-area="" asp-controller="Home" asp-action="Index">Patioba</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand text-white mr-4 pr-4" asp-area="" asp-controller="Home" asp-action="Index"><img
+                        src="~/css/Imagens/patioba.png" alt="patioba-logo" width="120"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Produto" asp-action="Index">Produtos</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Produto"
+                                asp-action="Index">Produtos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Cliente" asp-action="MyDetails">Meu cadastro</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Cliente"
+                                asp-action="MyDetails">Meu cadastro</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Suporte" asp-action="Create" id="faleconosco">Fale conosco</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Suporte" asp-action="Create"
+                                id="faleconosco">Fale conosco</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Área do Artesão
                             </a>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -46,7 +54,7 @@
                                 <a class="dropdown-item" asp-controller="Suporte" asp-action="Index">Suporte</a>
                             </div>
                         </li>
-                     
+
                     </ul>
                 </div>
 
@@ -76,4 +84,5 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>

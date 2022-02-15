@@ -5,25 +5,53 @@
 }
 
 <link rel="stylesheet" href="~/css/site.css" />
+<style>
 
+    article {
+        cursor: pointer;
+        border: none;
+    }
+
+    .btn {
+        background: #5F7A61;
+        border: none;
+        box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.10);
+        transition: transform .3s;
+        cursor: pointer;
+    }
+    article:hover {
+        transform: translateY(5px);
+        box-shadow: 2px 26px 6px 0px rgba(0,0,0,0.10);
+    }
+
+    
+    .btn:hover {
+        transform: translateY(5px);
+        box-shadow: 2px 26px 6px 0px rgba(0,0,0,0.10);
+        cursor: pointer;
+    }
+
+</style>
 <h1> Nossos Produtos</h1>
-<div class="container" >
+<div class="container">
     <div class="row">
         @foreach (var item in Model)
         {
 
             <div class="col-12 col-md-6 col-lg-4 my-4">
                 <div class="card">
-                    <a class="text-decoration-none" asp-action="Details" asp-route-id="@item.IdProduto">
-                        <img width="150" height="250" class="card-img-top " src="@Html.DisplayFor(modelItem => item.UrlImagem)" alt="Imagem produto" style="width:100%">
-                        <div class="card-body" style="background-color: #7FC8A9">
-                            <h5 class="card-title" style="color: #D5EEBB;">@Html.DisplayFor(modelItem => item.Nome)</h5>
-                            <p class="card-text mb-4 overflow-hidden h-50" style="color: #444941">
-                                @Html.DisplayFor(modelItem => item.Descricao)
-                            </p>
-                            <p style="color: #D5EEBB;">R$ @Html.DisplayFor(modelItem => item.Preco)</p>
-                        </div>
-                    </a>
+                    <article>
+                        <a class="text-decoration-none" asp-action="Details" asp-route-id="@item.IdProduto">
+                            <img width="150" height="250" class="card-img-top " src="@Html.DisplayFor(modelItem => item.UrlImagem)" alt="Imagem produto" style="width:100%">
+                            <div class="card-body" style="background-color: #7FC8A9">
+                                <h5 class="card-title" style="color: #D5EEBB;">@Html.DisplayFor(modelItem => item.Nome)</h5>
+                                <p class="card-text mb-4 overflow-hidden h-50" style="color: #444941">
+                                    @Html.DisplayFor(modelItem => item.Descricao)
+                                </p>
+                                <p style="color: #D5EEBB;">R$ @Html.DisplayFor(modelItem => item.Preco)</p>
+                            </div>
+                     </a>
+                    </article>
                     <a asp-controller="Pedido" asp-action="Create" class="btn btn-success">Comprar</a>
                 </div>
             </div>
