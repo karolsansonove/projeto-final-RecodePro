@@ -5,16 +5,16 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Index</h1>
+<h1>Login</h1>
 
-<h4>Cliente</h4>
+<h4>Faça seu login.../h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Login">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <label style="color: red" >@ViewBag.ErrorMessage</label>
-           
+            <label style="color: red">@ViewBag.ErrorMessage</label>
+
             <div class="form-group">
                 <label asp-for="Email" class="control-label"></label>
                 <input asp-for="Email" placeholder="@ViewBag.usuarioPadrao" class="form-control" />
@@ -22,10 +22,10 @@
             </div>
             <div class="form-group">
                 <label asp-for="Senha" class="control-label"></label>
-                <input asp-for="Senha" type ="password" class="form-control" />
+                <input asp-for="Senha" type="password" class="form-control" />
                 <span asp-validation-for="Senha" class="text-danger"></span>
             </div>
-            
+
             <div class="form-group">
                 <input type="submit" value="Login" class="btn btn-primary" />
             </div>
