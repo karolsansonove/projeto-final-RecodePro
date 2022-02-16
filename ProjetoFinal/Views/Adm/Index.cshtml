@@ -1,0 +1,18 @@
+﻿@model ProjetoFinal.Models.Artesao
+
+@{
+    ViewData["Title"] = "View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Área do artesão</h1>
+
+<div>
+    <a asp-controller="Produto" asp-action="List">Produtos</a>
+    <a asp-controller="Cliente" asp-action="Index">Clientes</a>
+    <a asp-controller="Pedido" asp-action="Index">Pedidos</a>
+    <a asp-controller="Artesao" asp-action="Index">Artesãos</a>
+    <a asp-controller="Suporte" asp-action="Index">Suporte</a>
+    <a asp-controller="Artesao" asp-action="Create">Cadastrar novo artesão</a>
+
+</div>

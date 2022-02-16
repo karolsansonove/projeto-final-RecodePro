@@ -27,11 +27,11 @@ namespace ProjetoFinal.Controllers
             return View();
         }
 
-        public IActionResult Login(Cliente cliente)
+        public IActionResult Login(Artesao artesao)
         {
-            if(_context.Cliente.Any(x => x.Email == cliente.Email && x.Senha == cliente.Senha))
+            if (_context.Artesao.Any(x => x.email == artesao.email && x.senha == artesao.senha))
             {
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Adm");
 
             }
             else

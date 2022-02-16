@@ -57,7 +57,7 @@ namespace ProjetoFinal.Controllers
         public IActionResult Create()
         {
            
-            ViewData["ClienteIdCliente"] = new SelectList(_context.Cliente, "IdCliente", "Email");
+            ViewData["ClienteIdCliente"] = new SelectList(_context.Artesao, "IdCliente", "Email");
 
             return View();
         }
@@ -75,7 +75,7 @@ namespace ProjetoFinal.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(MensagemEnviada));
             }
-            ViewData["ClienteIdCliente"] = new SelectList(_context.Cliente, "IdCliente", "Email", suporte.ClienteIdCliente);
+            ViewData["ClienteIdCliente"] = new SelectList(_context.Artesao, "IdCliente", "Email", suporte.ClienteIdCliente);
            
             return View(suporte);
         }
@@ -93,7 +93,7 @@ namespace ProjetoFinal.Controllers
             {
                 return NotFound();
             }
-            ViewData["ClienteIdCliente"] = new SelectList(_context.Cliente, "IdCliente", "Email", suporte.ClienteIdCliente);
+            ViewData["ClienteIdCliente"] = new SelectList(_context.Artesao, "IdCliente", "Email", suporte.ClienteIdCliente);
             return View(suporte);
         }
 
@@ -129,7 +129,7 @@ namespace ProjetoFinal.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ClienteIdCliente"] = new SelectList(_context.Cliente, "IdCliente", "Email", suporte.ClienteIdCliente);
+            ViewData["ClienteIdCliente"] = new SelectList(_context.Artesao, "IdCliente", "Email", suporte.ClienteIdCliente);
             return View(suporte);
         }
 

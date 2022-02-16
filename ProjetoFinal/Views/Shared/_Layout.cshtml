@@ -31,29 +31,21 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" asp-area="" asp-controller="Produto"
-                                asp-action="Index">Produtos</a>
+                               asp-action="Index">Produtos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" asp-area="" asp-controller="Cliente"
-                                asp-action="MyDetails">Meu cadastro</a>
+                               asp-action="MyDetails">Meu cadastro</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" asp-area="" asp-controller="Suporte" asp-action="Create"
-                                id="faleconosco">Fale conosco</a>
+                               id="faleconosco">Fale conosco</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Área do Artesão
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" asp-controller="Produto" asp-action="List">Produtos</a>
-                                <a class="dropdown-item" asp-controller="Cliente" asp-action="Index">Clientes</a>
-                                <a class="dropdown-item" asp-controller="Pedido" asp-action="Index">Pedidos</a>
-                                <a class="dropdown-item" asp-controller="Artesao" asp-action="Index">Artesãos</a>
-                                <a class="dropdown-item" asp-controller="Suporte" asp-action="Index">Suporte</a>
-                            </div>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Login" asp-action="Index"
+                               id="faleconosco">Área do artesão</a>
                         </li>
+
 
                     </ul>
                 </div>
