@@ -25,6 +25,7 @@ namespace ProjetoFinal
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSingleton<Microsoft.AspNetCore.Http.IHttpContextAccessor, Microsoft.AspNetCore.Http.HttpContextAccessor>();
             services.AddControllersWithViews();
             services.AddDbContext<ProjetoFinalDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Conn")));
         }
